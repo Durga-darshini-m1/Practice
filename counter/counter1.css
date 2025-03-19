@@ -1,0 +1,31 @@
+body{
+    position: absolute;
+    left:0%;
+    text-align: center;
+
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    text-align: center;
+
+}
+
+button{
+    width: 90%;
+    height:60%;
+    font-size: 30px;
+    background-color: black;
+    color:white;
+    border: 0cap;
+
+}
+
+button:hover{
+    background-color: grey;
+    color:bisque;
+
+}
