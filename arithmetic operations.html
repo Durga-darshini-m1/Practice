@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Arithmetic operations</title>
+
+        <script>
+            function operations(){
+                var num1=parseFloat(document.getElementById('num1').value);
+                var num2=parseFloat(document.getElementById('num2').value);
+
+                document.getElementById('add').innerHTML="Addition:"+(num1+num2);
+                document.getElementById('sub').innerHTML="Subtraction:"+(num1-num2);
+                document.getElementById('mul').innerHTML="Multiplication:"+(num1*num2);
+                document.getElementById('div').innerHTML="Division:"+(num1/num2);
+            
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <form>
+            num1:<input type="number" id="num1">
+            num2:<input type="number" id="num2">
+            <input type="button" value="Calculate" onclick="operations()">
+        </form>
+        <p id="add"></p>
+        <p id="sub"></p>
+        <p id="mul"></p>
+        <p id="div"></p>
+    </body>
+</html>

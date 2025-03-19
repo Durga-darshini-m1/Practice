@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NewsLetter</title>
+        <script type="text/javascript">
+            function subscription(){
+
+                alert("Welcome to our daily newsLetter subscription.");
+                var subscribe=confirm("Would you like to subscribe to ourdaily newsletter?");
+                if (subscribe){
+
+                var email=prompt("Please provide your e-mail address."," ");
+                
+                if (email){
+                    alert("Thank you for your subscription .");
+                }else{
+                    alert("You cannot get the subscription without e-mail");
+                }
+                }else{
+                    alert("No problem you can always subscribe later if you chnage your mind");
+                }
+            }
+        </script>
+    </head>
+    <body onload="subscription()">
+        <h1>Welcome to our Website</h1>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br><br>
+            <label for="description" >Dexcription:</label>
+            <textarea id="description" name="description"></textarea><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" >
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" >
+            <label for="male">Female</label><br><br>
+
+            <label for="Interest">Interests:</label><br>
+            <input type="checkbox" name="interest" id="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" name="interest" id="music">
+            <label for="music">Music</label><br><br>
+
+            <input type="submit" value="Submit">
+          
+        </form>
+    </body>
+</html>

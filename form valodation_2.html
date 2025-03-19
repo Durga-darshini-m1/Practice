@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Registration form</title>
+
+        <script>
+            function validate(){
+                var name=document.forms['registration']['name'].value;
+                var gmail=document.forms['registration']['gmail'].value;
+                var password=document.forms['registration']['password'].value;
+
+                if(name==""|| gmail==""|| password==""){
+                    alert("All the fields must be filled");
+                    return false;
+            
+                }
+                var re=/\S+@\S+\.\S+/;
+                if(!re.test(gmail)){
+                    alert("Invalid gmail format.");
+                    return false;
+                }
+                if (password.len<6){
+                    alert("Passward id not up to the point.");
+                    return false;
+                }
+                alert("registration successfull.");
+                return true;
+            }
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <h1>
+            Registration Form
+        </h1>
+        <form name="Registration" onlick="return validate()">
+            Name: <input type="text" name="name" id="name">
+            Gmail:<input type="email" name="email" id="email">
+            password: <input type="password" name="password" id="password">
+            <input type="submit" value="Register">
+
+        </form>
+    </body>
+</html>
